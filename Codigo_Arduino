@@ -1,0 +1,131 @@
+// C++ code
+//
+//Variables que almacenan los valores leídos por los sensores
+int humedad = 0;
+int temperatura = 0;
+int humedadAmbiental = 0;
+int boton = 2;
+
+
+void setup()
+{
+  
+ //Configuración de los pines 7 y 8 como salidas
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  
+ // Configuración del pulsador como entrada utilizando la resistencia interna Pull-Up
+  pinMode(boton, INPUT_PULLUP);
+ 
+
+  //Inicializa la comunicación con el monitor serie
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  //Lectura de los sensores conectados a los pines analógicos
+  humedad = analogRead(A0);
+  temperatura = analogRead(A1);
+  humedadAmbiental = analogRead(A2);
+  
+  
+
+  //Muestra la lectura del sensor de humedad en el Monitor Serie
+Serial.print("Humedad del suelo: ");
+
+if(humedad < 500)
+{
+    digitalWrite(8, HIGH);
+    digitalWrite(7, LOW);
+    Serial.print("BAJA (");
+    Serial.print(humedad);
+    Serial.println(")");
+}
+else
+{
+    digitalWrite(8, LOW);
+    digitalWrite(7, HIGH);
+    Serial.print("NORMAL (");
+    Serial.print(humedad);
+    Serial.println(")");
+}
+  
+  
+  
+  //Muestra la lectura del sensor de temperatura en el Monitor Serie
+Serial.print("Temperatura: ");
+
+if(temperatura > 180)
+{
+    Serial.print("ALTA (");
+    Serial.print(temperatura);
+    Serial.println(")");
+}
+else if(temperatura > 143)
+{
+    Serial.print("NORMAL (");
+    Serial.print(temperatura);
+    Serial.println(")");
+}
+else
+{
+    Serial.print("BAJA (");
+    Serial.print(temperatura);
+    Serial.println(")");
+}
+  
+  
+ // Evalúa el nivel de humedad ambiental simulado mediante un potenciómetro
+ Serial.print("Humedad ambiental: ");
+
+if(humedadAmbiental < 300)
+{
+    Serial.print("BAJA (");
+    Serial.print(humedadAmbiental);
+    Serial.println(")");
+}
+else if(humedadAmbiental < 700)
+{
+    Serial.print("NORMAL (");
+    Serial.print(humedadAmbiental);
+    Serial.println(")");
+}
+else
+{
+    Serial.print("ALTA (");
+    Serial.print(humedadAmbiental);
+    Serial.println(")");
+}
+  
+  
+  // Imprime una línea en blanco
+  Serial.println();
+ // Comprueba si las tres condiciones críticas del cultivo se cumplen al mismo tiempo
+if (humedad < 500 && humedadAmbiental < 300 && temperatura > 184)
+{
+  // Permite activar manualmente el sistema de riego mediante el pulsador
+    if (digitalRead(boton) == LOW)
+    {
+        Serial.println();
+        Serial.println("Sistema de riego activado.");
+    }
+    else
+    {
+        Serial.println();
+        Serial.println("ALERTA");
+        Serial.println("Condiciones criticas para el cultivo.");
+        Serial.println("Se recomienda activar el sistema de riego.");
+    }
+
+}
+
+  //Línea divisora para facilitar la lectura de los datos
+Serial.println("________________");
+  
+  //Espera un segundo antes de repetir el proceso
+delay(1000);
+  
+ }    
+
+  
