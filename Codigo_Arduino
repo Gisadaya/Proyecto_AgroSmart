@@ -1,6 +1,6 @@
 // C++ code
 //
-//Variables que almacenan los valores leídos por los sensores
+// Variables que almacenan los valores leídos por los sensores
 int humedad = 0;
 int temperatura = 0;
 int humedadAmbiental = 0;
@@ -10,7 +10,7 @@ int boton = 2;
 void setup()
 {
   
- //Configuración de los pines 7 y 8 como salidas
+ // Configura los pines 7 y 8 como salidas para controlar los LEDs indicadores
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
   
@@ -18,7 +18,7 @@ void setup()
   pinMode(boton, INPUT_PULLUP);
  
 
-  //Inicializa la comunicación con el monitor serie
+  //Inicializa la comunicación con el Monitor Serie
   Serial.begin(9600);
 }
 
@@ -31,9 +31,10 @@ void loop()
   
   
 
-  //Muestra la lectura del sensor de humedad en el Monitor Serie
+  // Evalúa el nivel de humedad del suelo y muestra el resultado en el Monitor Serie
 Serial.print("Humedad del suelo: ");
 
+  // Si la humedad es menor a 500, el sistema considera que el suelo está seco
 if(humedad < 500)
 {
     digitalWrite(8, HIGH);
@@ -53,9 +54,10 @@ else
   
   
   
-  //Muestra la lectura del sensor de temperatura en el Monitor Serie
+  // Evalúa el nivel de temperatura y muestra el resultado en el Monitor Serie
 Serial.print("Temperatura: ");
 
+  // Clasifica la temperatura como alta, normal o baja según los rangos establecidos
 if(temperatura > 180)
 {
     Serial.print("ALTA (");
@@ -79,6 +81,7 @@ else
  // Evalúa el nivel de humedad ambiental simulado mediante un potenciómetro
  Serial.print("Humedad ambiental: ");
 
+  // Clasifica la humedad ambiental utilizando los valores obtenidos del potenciómetro
 if(humedadAmbiental < 300)
 {
     Serial.print("BAJA (");
@@ -104,7 +107,7 @@ else
  // Comprueba si las tres condiciones críticas del cultivo se cumplen al mismo tiempo
 if (humedad < 500 && humedadAmbiental < 300 && temperatura > 184)
 {
-  // Permite activar manualmente el sistema de riego mediante el pulsador
+  // Verifica si el agricultor presiona el pulsador para activar el sistema de riego
     if (digitalRead(boton) == LOW)
     {
         Serial.println();
@@ -120,12 +123,10 @@ if (humedad < 500 && humedadAmbiental < 300 && temperatura > 184)
 
 }
 
-  //Línea divisora para facilitar la lectura de los datos
+  // Línea divisora para facilitar la lectura de los datos
 Serial.println("________________");
   
-  //Espera un segundo antes de repetir el proceso
+  // Espera un segundo antes de repetir el proceso
 delay(1000);
   
  }    
-
-  
