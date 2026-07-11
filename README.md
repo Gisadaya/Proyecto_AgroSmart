@@ -6,7 +6,7 @@ Proyecto Integrador AgroSmart - Feria de Microcontroladores ICKW 2026
 
 ## Descripción:
 
-AgroSmart es un sistema inteligente para el monitoreo agrícola que permite supervisar la humedad del suelo y la temperatura ambiental mediante Arduino y sensores. El sistema genera alertas cuando detecta condiciones que requieren atención y servirá como base para una aplicación móvil que facilitará el monitoreo y el control del riego.
+AgroSmart Local es un sistema inteligente para el monitoreo agrícola desarrollado mediante Arduino y simulado en Tinkercad Circuits. El sistema permite supervisar la humedad del suelo, la temperatura y la humedad ambiental simulada, generando alertas cuando detecta condiciones críticas y permitiendo la activación manual del sistema de riego.
 
 ## Objetivo:
 
@@ -34,11 +34,14 @@ Desarrollar un sistema capaz de monitorear la humedad del suelo, la temperatura 
 - Protoboard
 - Cables de conexión
 
-## Tecnologías utilizadas:
+## Software utilizado:
 
-- Arduino IDE (Lenguaje C++)
 - Tinkercad Circuits
 - GitHub
+
+## Lenguaje de programación:
+
+- C++
 
 ## Integrantes:
 - Gissel Adayari Díaz López
