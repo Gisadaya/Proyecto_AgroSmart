@@ -4,6 +4,10 @@
 Proyecto Integrador AgroSmart - Feria de Microcontroladores ICKW 2026
 </h2>
 
+## Enlace de la simulación:
+https://www.tinkercad.com/things/iRofrS6Fozt-simulacion-agrosmart-promax/editel?sharecode=flBW8u_s0YeAaIZhU_iHNkGQiU95yN-u8YYIsSlcEbM
+
+
 ## Descripción:
 
 AgroSmart Local es un sistema inteligente para el monitoreo agrícola desarrollado mediante Arduino y simulado en Tinkercad Circuits. El sistema permite supervisar la humedad del suelo, la temperatura y la humedad ambiental simulada, generando alertas cuando detecta condiciones críticas y permitiendo la activación manual del sistema de riego.
