@@ -4,27 +4,45 @@
 Proyecto Integrador AgroSmart - Feria de Microcontroladores ICKW 2026
 </h2>
 
-## Enlace de la simulación:
-https://www.tinkercad.com/things/iRofrS6Fozt-simulacion-agrosmart-promax/editel?sharecode=flBW8u_s0YeAaIZhU_iHNkGQiU95yN-u8YYIsSlcEbM
-
-
 ## Descripción:
+AgroSmart Local es un sistema inteligente de monitoreo agrícola desarrollado como proyecto integrador para la Feria de Microcontroladores ICKW 2026.
 
-AgroSmart Local es un sistema inteligente para el monitoreo agrícola desarrollado mediante Arduino y simulado en Tinkercad Circuits. El sistema permite supervisar la humedad del suelo, la temperatura y la humedad ambiental simulada, generando alertas cuando detecta condiciones críticas y permitiendo la activación manual del sistema de riego.
+El proyecto busca facilitar el monitoreo de las condiciones ambientales de un cultivo mediante el uso de sensores conectados a un Arduino Uno y una aplicación móvil desarrollada en MIT App Inventor.
+
+---
 
 ## Objetivo:
 
-Desarrollar un sistema capaz de monitorear la humedad del suelo, la temperatura y la humedad ambiental para apoyar la toma de decisiones relacionadas con el riego del cultivo.
+Desarrollar un sistema capaz de monitorear:
 
-## Funcionalidades:
+- Humedad del suelo
+- Temperatura ambiental
+- Humedad ambiental
 
-- Monitoreo de humedad del suelo.
-- Monitoreo de temperatura.
-- Simulación de humedad ambiental.
-- Indicadores visuales mediante LEDs.
-- Generación de alertas cuando se detectan condiciones críticas.
-- Activación manual del sistema de riego mediante un pulsador.
-- Visualización de datos en el Monitor Serie.
+permitiendo visualizar la información desde una aplicación móvil y generar alertas cuando se detecten condiciones críticas.
+
+#  Funciones de la Aplicación
+
+La aplicación AgroSmart Local cuenta con las siguientes funciones:
+
+✅ Inicio de sesión.
+
+✅ Menú principal.
+
+✅ Monitoreo de:
+
+- Temperatura.
+- Humedad del suelo.
+- Humedad ambiental.
+
+✅ Sistema de alertas.
+
+✅ Configuración de la aplicación.
+
+✅ Activación manual del sistema de riego.
+
+✅ Comunicación Bluetooth con Arduino.
+
 
 ## Componentes utilizados:
 
@@ -40,21 +58,46 @@ Desarrollar un sistema capaz de monitorear la humedad del suelo, la temperatura 
 
 ## Software utilizado:
 
+- MIT App Inventor
 - Tinkercad Circuits
 - GitHub
 
 ## Lenguaje de programación:
 
 - C++
+-  Programación por bloques (MIT App Inventor)
 
 ## Integrantes:
 - Gissel Adayari Díaz López
 - Leonardo Abisaí Funez Zetino
 - Ariana Valeria Arias Henriquez
 
+## Enlace de la simulación en Tinkercad:
+https://www.tinkercad.com/things/iRofrS6Fozt-simulacion-agrosmart-promax/editel?sharecode=flBW8u_s0YeAaIZhU_iHNkGQiU95yN-u8YYIsSlcEbM
 
+# Estructura del Proyecto
 
+## Etapa 2
 
+Contiene:
+
+- Diseño del circuito.
+- Simulación en Tinkercad.
+- Código Arduino.
+- Capturas del proyecto.
+- Documentación correspondiente.
+
+---
+
+## Etapa 3
+
+Contiene:
+
+- Desarrollo de la aplicación móvil.
+- Archivo AIA.
+- Archivo APK.
+- Capturas de la aplicación.
+- Documento explicativo.
 
 
 
