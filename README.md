@@ -23,81 +23,54 @@ permitiendo visualizar la información desde una aplicación móvil y generar al
 
 #  Funciones de la Aplicación
 
-La aplicación AgroSmart Local cuenta con las siguientes funciones:
-
-✅ Inicio de sesión.
-
-✅ Menú principal.
-
-✅ Monitoreo de:
-
-- Temperatura.
-- Humedad del suelo.
-- Humedad ambiental.
-
-✅ Sistema de alertas.
-
-✅ Configuración de la aplicación.
-
-✅ Activación manual del sistema de riego.
-
-✅ Comunicación Bluetooth con Arduino.
+| Funcionalidad | Estado |
+|---------------|:------:|
+| Inicio de sesión | Implementado |
+| Registro de usuarios | Implementado |
+| Menú principal | Implementado |
+| Monitoreo de humedad del suelo | Implementado |
+| Monitoreo de temperatura | Implementado |
+| Monitoreo de humedad ambiental | Implementado |
+| Sistema de alertas | Implementado |
+| Recomendaciones para el usuario | Implementado |
+| Configuración de la aplicación | Implementado |
+| Control manual de la bomba de agua | Implementado |
+| Comunicación Bluetooth | Preparada para la integración con Arduino |
 
 
-## Componentes utilizados:
-
-- Arduino Uno
-- Sensor de humedad del suelo
-- Sensor de temperatura TMP36
-- Potenciómetro (simulación de humedad ambiental)
-- Pulsador
-- LEDs
-- Resistencias
-- Protoboard
-- Cables de conexión
 
 ## Software utilizado:
 
-- MIT App Inventor
-- Tinkercad Circuits
-- GitHub
+| Tecnología | Función |
+|------------|----------|
+| MIT App Inventor | Desarrollo de la aplicación móvil |
+| Arduino Uno | Control del sistema electrónico |
+| Bluetooth HC-05 | Comunicación inalámbrica |
+| TinyDB | Almacenamiento local |
+| Tinkercad Circuits | Simulación del circuito |
+| GitHub | Control de versiones |
+
 
 ## Lenguaje de programación:
 
 - C++
 -  Programación por bloques (MIT App Inventor)
 
+# Estructura del Proyecto
+
+| Carpeta | Contenido |
+|----------|-----------|
+| Etapa 2 | Simulación del circuito, código Arduino, documentación y evidencias de la segunda etapa. |
+| Etapa 3 | Archivo .aia, archivo .apk, capturas de pantalla, documentación, diagrama de Gantt y evidencias de la tercera etapa. |
+
+
 ## Integrantes:
 - Gissel Adayari Díaz López
 - Leonardo Abisaí Funez Zetino
 - Ariana Valeria Arias Henriquez
 
-## Enlace de la simulación en Tinkercad:
-https://www.tinkercad.com/things/iRofrS6Fozt-simulacion-agrosmart-promax/editel?sharecode=flBW8u_s0YeAaIZhU_iHNkGQiU95yN-u8YYIsSlcEbM
 
-# Estructura del Proyecto
 
-## Etapa 2
-
-Contiene:
-
-- Diseño del circuito.
-- Simulación en Tinkercad.
-- Código Arduino.
-- Capturas del proyecto.
-- Documentación correspondiente.
-
----
-
-## Etapa 3
-
-Contiene:
-
-- Desarrollo de la aplicación móvil.
-- Archivo AIA.
-- Archivo APK.
-- Capturas de la aplicación.
-- Documento explicativo.
 
 
 
