@@ -64,10 +64,10 @@ permitiendo visualizar la información desde una aplicación móvil y generar al
 | Etapa 3 | Archivo .aia, archivo .apk, capturas de pantalla, documentación, diagrama de Gantt y evidencias de la tercera etapa. |
 
 
-## Integrantes:
+## Integrante:
 - Gissel Adayari Díaz López
-- Leonardo Abisaí Funez Zetino
-- Ariana Valeria Arias Henriquez
+
+  
 
 
 
