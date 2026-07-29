@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Banner_Agrosmart.png" width="100%">
+</p>
+
 <h1 align="center">Proyecto AgroSmart Local</h1>
 
 <h2 align="center">
