@@ -7,7 +7,7 @@ Proyecto Integrador AgroSmart - Feria de Microcontroladores ICKW 2026
 ## Descripción:
 AgroSmart Local es un sistema inteligente de monitoreo agrícola desarrollado como proyecto integrador para la Feria de Microcontroladores ICKW 2026.
 
-El proyecto busca facilitar el monitoreo de las condiciones ambientales de un cultivo mediante el uso de sensores conectados a un Arduino Uno y una aplicación móvil desarrollada en MIT App Inventor.
+El proyecto busca facilitar el monitoreo de las condiciones ambientales de un cultivo mediante el uso de sensores conectados a un Arduino Uno y una aplicación móvil desarrollada en MIT App Inventor. Además de visualizar la información en tiempo real, la aplicación permite generar alertas cuando se detectan condiciones críticas y ofrece la posibilidad de activar manualmente una bomba de agua para realizar el riego del cultivo cuando sea necesario.
 
 ---
 
@@ -19,7 +19,7 @@ Desarrollar un sistema capaz de monitorear:
 - Temperatura ambiental
 - Humedad ambiental
 
-permitiendo visualizar la información desde una aplicación móvil y generar alertas cuando se detecten condiciones críticas. De esta forma el usuario conocera el estado del terreno desde una aplicación móvil y podra tomar decisiones oportunas para mejorar el cuidado de las plantas.
+permitiendo visualizar la información desde una aplicación móvil y generar alertas cuando se detecten condiciones críticas. De esta forma, el usuario conocerá el estado del cultivo desde una aplicación móvil, podrá tomar decisiones oportunas para mejorar el cuidado de las plantas y controlar manualmente el sistema de riego mediante una bomba de agua cuando las condiciones del suelo lo requiera.
 
 #  Desarrollo del proyecto
 
@@ -43,11 +43,11 @@ En esta etapa se desarrolló la simulación del sistema utilizando Tinkercad.
 
 Se realizó:
 
-- Diseño del circuito electrónico.
-- Programación del Arduino Uno.
-- Simulación de sensores.
-- Pruebas de funcionamiento.
-- Documentación técnica.
+- Diseño del circuito electrónico en Tinkercad.
+- Programación del comportamiento del sistema utilizando C++ dentro del entorno de simulación.
+- Simulación del funcionamiento de los sensores disponibles en la plataforma.
+- Realización de pruebas para verificar el comportamiento del prototipo.
+- Grabación de un video explicativo mostrando el funcionamiento del circuito y la lógica de programación implementada durante la simulación.
 
 ## Etapa 3 – Desarrollo de la aplicación móvil
 
@@ -57,15 +57,22 @@ Durante esta fase se desarrolló la aplicación móvil utilizando MIT App Invent
 
 Se implementaron:
 
-- Inicio de sesión.
-- Registro de usuarios.
-- Menú principal.
-- Pantalla de monitoreo.
-- Sistema de alertas.
-- Pantalla de configuración.
-- Control manual del riego.
-- Comunicación Bluetooth.
-- Almacenamiento mediante TinyDB.
+- Diseño de la interfaz gráfica de la aplicación.
+- Desarrollo de las diferentes pantallas que conforman el sistema.
+- Implementación de la lógica mediante programación por bloques.
+- Configuración del almacenamiento local utilizando TinyDB.
+- Preparación de la comunicación Bluetooth para la integración con Arduino.
+- Realización de pruebas de funcionamiento y corrección de errores durante el desarrollo.
+- Compilación del archivo .apk para realizar pruebas de instalación y funcionamiento en dispositivos móviles.
+
+#  Estado actual
+
+| Etapa | Estado |
+|-------|:------:|
+| Etapa 1 | Finalizada |
+| Etapa 2 |  Finalizada |
+| Etapa 3 |  Finalizada|
+| Etapa 4 |  En Desarrollo|
 
 #  Funciones de la Aplicación
 
@@ -97,26 +104,10 @@ Se implementaron:
 | GitHub | Control de versiones |
 
 
-## Lenguaje de programación:
+## Lenguajes de programación utilizados:
 
 - C++
 -  Programación por bloques (MIT App Inventor)
-
-# Estructura del Proyecto
-
-| Carpeta | Contenido |
-|----------|-----------|
-| Etapa 2 | Simulación del circuito, código Arduino, documentación y evidencias de la segunda etapa. |
-| Etapa 3 | Archivo .aia, archivo .apk, capturas de pantalla, documentación, diagrama de Gantt y evidencias de la tercera etapa. |
-
-#  Estado actual
-
-| Etapa | Estado |
-|-------|:------:|
-| Etapa 1 | Finalizada |
-| Etapa 2 |  Finalizada |
-| Etapa 3 |  Finalizada|
-| Etapa 3 |  En Desarrollo|
 
 ## Integrante:
 - Gissel Adayari Díaz López
